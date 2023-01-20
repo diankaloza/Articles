@@ -1,12 +1,6 @@
 import * as React from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import {
-  IconButton,
-  InputBase,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { IconButton, InputBase, Typography } from "@mui/material";
 
 import * as S from "./styles";
 import { ChangeEvent, useState } from "react";

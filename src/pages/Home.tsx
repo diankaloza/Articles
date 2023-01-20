@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 import { ArticleCard } from "../components/ArticleCard";
 import { SearchInput } from "../components/SearchInput";
@@ -15,7 +15,6 @@ import {
   SkeletonArticles,
   SkeletonSearch,
 } from "styles/pages/styles";
-import { TypeFlags } from "typescript";
 
 export const Home: React.FC = () => {
   const { visibleArticles, status } = useAppSelector(

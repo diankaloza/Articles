@@ -11,8 +11,6 @@ import {
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-import { RootState } from "store";
-import { useAppSelector } from "../../hooks/useAppSelector";
 import { ButtonIcon, CardContainer, CardMediaFile } from "styles/pages/styles";
 
 interface I_CardBlockProps {
@@ -30,7 +28,6 @@ export const ArticleCard: React.FC<I_CardBlockProps> = ({
   description,
   date,
 }) => {
-  const { articles } = useAppSelector((state: RootState) => state.articles);
   return (
     <Grid item md={4}>
       <CardContainer>
