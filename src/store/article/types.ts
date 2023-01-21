@@ -1,12 +1,7 @@
-import { E_Status } from "store/articles/types";
-
-export type Article = {
-  title: string;
-  imageUrl: string;
-  description: string;
-};
+import { T_Article } from 'models/article'
+import { E_Status } from 'models/store'
 
 export interface I_ArticleItemSlice {
-  article: Article;
-  status: E_Status;
+  article: T_Article
+  status: E_Status
 }

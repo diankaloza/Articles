@@ -1,26 +1,14 @@
-export type T_Article = {
-  id: string;
-  title: string;
-  imageUrl: string;
-  description: string;
-  createdAt: string;
-  fullDescription: string;
-};
+import { T_Article } from 'models/article'
+import { E_Status } from 'models/store'
 
-export type T_VisibleArticle = T_Article & { priority: number };
+export type T_VisibleArticle = T_Article & { priority: number }
 
 export type SearchArticlesParams = {
-  search: string;
-};
-
-export enum E_Status {
-  LOADING = "loading",
-  SUCCESS = "success",
-  ERROR = "error",
+  search: string
 }
 
 export interface I_ArticlesSlice {
-  articles: T_Article[];
-  visibleArticles: T_VisibleArticle[];
-  status: E_Status;
+  articles: T_Article[]
+  visibleArticles: T_VisibleArticle[]
+  status: E_Status
 }

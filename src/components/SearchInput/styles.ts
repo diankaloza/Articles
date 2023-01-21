@@ -1,5 +1,5 @@
-import { Paper } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Paper } from '@mui/material'
+import { styled } from '@mui/material/styles'
 
 export const SearchInputWrapper = styled(Paper)`
   border-radius: 5px;
@@ -9,4 +9,4 @@ export const SearchInputWrapper = styled(Paper)`
   justify-content: start;
   width: 400px;
   margin: 10px 0px 20px 0px;
-`;
+`
